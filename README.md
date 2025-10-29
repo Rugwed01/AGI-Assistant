@@ -82,7 +82,7 @@ This project is a desktop assistant built for the "AGI Assistant" hackathon. Its
     * Install the **Microsoft Visual C++ Redistributable (x64)**. [Download Link](https://aka.ms/vs/17/release/vc_redist.x64.exe)
 2.  **Clone Repository:** (If applicable)
     ```bash
-    git clone <your-repo-url>
+    git clone <[my github url](https://github.com/Rugwed01/AGI-Assistant)>
     cd agi-assistant
     ```
 3.  **Create Virtual Environment:**
@@ -90,16 +90,11 @@ This project is a desktop assistant built for the "AGI Assistant" hackathon. Its
     python -m venv .venv
     .\.venv\Scripts\activate
     ```
-4.  **Install Python Dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-    *(Make sure `requirements.txt` includes: `pynput`, `mss`, `sounddevice`, `numpy`, `scipy`, `pytesseract`, `Pillow`, `llama-cpp-python`)*
-5.  **Download & Place External Files:**
+4.  **Download & Place External Files:**
     * Download the **Phi-3 GGUF model** and place it in the `/models/` folder.
     * Download the **Whisper `ggml-base.en.bin` model** and place it in the `/models/` folder.
     * Download the **Whisper CLI Windows binary zip** from [ggml/whisper.cpp releases](https://github.com/ggerganov/whisper.cpp/releases). Extract `whisper-cli.exe` and **all** accompanying `.dll` files directly into the project's root folder (`/agi-assistant/`).
-6.  **(Optional but Recommended) Configure Paths:**
+5.  **(Optional but Recommended) Configure Paths:**
     * In `perceiver_service.py`, verify that `TESSERACT_CMD_PATH` points to your `tesseract.exe` if it's not in your system PATH.
     * In `AGI_Assistant.spec`, verify the **source path** for `tessdata` is correct before building the `.exe`.
 
