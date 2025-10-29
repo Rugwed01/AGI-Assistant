@@ -51,7 +51,6 @@ This project is a desktop assistant built for the "AGI Assistant" hackathon. Its
 |-- command_interpreter.py    # Parses transcribed audio commands
 |-- storage_service.py        # Cleans up old raw data
 |
-|-- requirements.txt          # Python dependencies
 |-- AGI_Assistant.spec        # PyInstaller configuration file
 |
 |-- /models/                  # LLM (.gguf) and Whisper (.bin) models go here
